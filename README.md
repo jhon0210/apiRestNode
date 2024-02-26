@@ -9,3 +9,11 @@
 4. Renombrar ese archivo .env.template con el nombre .env
 
 4. Si se tiene docker instalado ejecutar el comando docker compose up --build
+
+5. Pueden realizar el login con los siguientes usuarios para la autenticacion y generar el token
+
+"usuario": "admin",
+ "clave": "4587"
+
+"usuario": "adminAdvence",
+ "clave": "8569"
