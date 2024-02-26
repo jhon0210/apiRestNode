@@ -1,6 +1,6 @@
 #PASOS DE INSTALACION
 
-1. clone git@github.com:jhon0210/pruebaNewInntech.git
+1. Ejecutar el comando git clone git@github.com:jhon0210/pruebaNewInntech.git
 
 2. Ubicarse en la carpeta del proyecto
 
