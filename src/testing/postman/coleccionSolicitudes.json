@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "289d1d69-1d97-4d30-9940-7904cac58e7d",
+		"name": "coleccionSolicitudesPrueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33191993"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usuario\": \"Admin\",\n    \"clave\": \"1869851\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiQWRtaW4iLCJpYXQiOjE3MDg5MTAxODQsImV4cCI6MTcwODkxMDc4NH0.zxUq3xjz5GY8ZM3ZtmVWWjZde9WUa-Pga3sL6DNfSug",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiQWRtaW4iLCJpYXQiOjE3MDg5MDk2NzAsImV4cCI6MTcwODkxMDI3MH0.Z8ZF4nJbPe_Cop2Yvq5yqBaiN3DC-hJp_KTXDmNacYI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"David\",\n    \"usuario\": \"adminAdavanced\",\n    \"clave\": \"2838\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarUsuario",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiQWRtaW4iLCJpYXQiOjE3MDg5MDk2NzAsImV4cCI6MTcwODkxMDI3MH0.Z8ZF4nJbPe_Cop2Yvq5yqBaiN3DC-hJp_KTXDmNacYI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Meli\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiQWRtaW4iLCJpYXQiOjE3MDg5MDk2NzAsImV4cCI6MTcwODkxMDI3MH0.Z8ZF4nJbPe_Cop2Yvq5yqBaiN3DC-hJp_KTXDmNacYI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
